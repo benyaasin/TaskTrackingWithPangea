@@ -5,7 +5,7 @@ import { Task } from "../types/Task";
 import TaskColumn from "./TaskColumn";
 import Background from "../Background";
 
-const TaskBoard = ({ tasks, setTasks }) => {
+const TaskBoard = ({ tasks, setTasks }: { tasks: Task[], setTasks: React.Dispatch<React.SetStateAction<Task[]>> }) => {
     const onDragEnd = (result: DropResult) => {
         const { destination, source, draggableId } = result;
 
