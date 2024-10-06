@@ -15,8 +15,8 @@ const AddTaskForm: React.FC<AddTaskFormProps> = ({ addTask }) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [assignee, setAssignee] = useState("");
-  const [status, setStatus] = useState<"To Do" | "In Progress" | "Done">(
-    "To Do"
+  const [status, setStatus] = useState<"Yapılacaklar/To Do" | "Yapılıyor.../In Progress" | "Tamamlandı/Done">(
+    "Yapılacaklar/To Do"
   ); // Durum için state ekledik
   const [error, setError] = useState<string | null>(null);
 
@@ -39,7 +39,7 @@ const AddTaskForm: React.FC<AddTaskFormProps> = ({ addTask }) => {
     setTitle("");
     setDescription("");
     setAssignee("");
-    setStatus("To Do"); 
+    setStatus("Yapılacaklar/To Do"); 
     setError(null);
     handleClose();
   };
