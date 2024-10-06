@@ -3,7 +3,7 @@ import { Droppable } from "@hello-pangea/dnd";
 import React from "react";
 import { Col } from "react-bootstrap";
 import TaskCard from "./TaskCard";
-import styled from "styled-components";
+
 
 interface TaskColumnProps {
     tasks: Task[];
